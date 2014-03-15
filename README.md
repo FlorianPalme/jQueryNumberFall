@@ -35,7 +35,7 @@ $(function(){
     
     // Auf 1000 zählen
     $( '#value3' ).numberFall({
-    	plus:		1000
+    	minus:		1000
         , countto: 	true
     });
     
@@ -43,7 +43,7 @@ $(function(){
     // SEHR langsames hinunterzählen
     $( '#value4' ).numberFall({
     	minus:		1000
-        , speed:	15000
+        , speed:	1500
     });
     
     
