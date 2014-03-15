@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Demo jQueryNumberfall</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+    	<div class="row">
+			<div class="col-xs-12" style="margin-bottom:40px;">
+				<h1>jQuery NumberFall Plugin</h1>
+	      		<p><a href="http://bit.ly/1o6rmiX" target="_self">Die aktuellste Version immer auf GitHub</a>!</p>
+			</div>
+      	</div>
+
+		<div class="row">
+	      	<!-- DEMO 1 -->
+			<div class="col-xs-12 col-sm-2 col-sm-offset-1">
+				<div class="panel panel-default">
+					<div class="panel-heading">Demo 1</div>
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<div class="panel-body text-center" id="value1">
+								500	
+							</div>	
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="numberfall1();">Start</button>
+						<button type="button" class="btn btn-default btn-lg btn-block" onclick="numberfallreset1();">Reset</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- DEMO 2 -->
+			<div class="col-xs-12 col-sm-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">Demo 2</div>
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<div class="panel-body text-center" id="value2">
+								500	
+							</div>	
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="numberfall2();">Start</button>
+						<button type="button" class="btn btn-default btn-lg btn-block" onclick="numberfallreset2();">Reset</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- DEMO 3 -->
+			<div class="col-xs-12 col-sm-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">Demo 3</div>
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<div class="panel-body text-center" id="value3">
+								2302	
+							</div>	
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="numberfall3();">Start</button>
+						<button type="button" class="btn btn-default btn-lg btn-block" onclick="numberfallreset3();">Reset</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- DEMO 4 -->
+			<div class="col-xs-12 col-sm-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">Demo 4</div>
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<div class="panel-body text-center" id="value4">
+								1050	
+							</div>	
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="numberfall4();">Start</button>
+						<button type="button" class="btn btn-default btn-lg btn-block" onclick="numberfallreset4();">Reset</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- DEMO 5 -->
+			<div class="col-xs-12 col-sm-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">Demo 5</div>
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<div class="panel-body text-center" id="value5">
+								88356	
+							</div>	
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="numberfall5();">Start</button>
+						<button type="button" class="btn btn-default btn-lg btn-block" onclick="numberfallreset5();">Reset</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="numberFall.js"></script>
+	<script language="javascript" type="text/javascript">
+	function numberfall1(){
+		// Hinaufzählen, um 500
+	    $( '#value1' ).numberFall({
+	        plus: 500
+	    });
+	}
+	
+	function numberfallreset1(){
+	    $( '#value1' ).text(500);
+	}
+	
+	
+	function numberfall2(){
+		// Herunterzählen, um 500
+	    $( '#value2' ).numberFall({
+	        minus: 500
+	    });
+	}
+	
+	function numberfallreset2(){
+	    $( '#value2' ).text(500);
+	}
+	
+	
+	function numberfall3(){
+		// Auf 1000 zählen
+	    $( '#value3' ).numberFall({
+	        minus:       1000
+        	, countto:  true
+	    });
+	}
+	
+	function numberfallreset3(){
+	    $( '#value3' ).text(2302);
+	}
+
+
+	function numberfall4(){
+		// SEHR langsames hinunterzählen
+	    $( '#value4' ).numberFall({
+	        minus:      1000
+        	, speed:    1500
+	    });
+	}
+	
+	function numberfallreset4(){
+	    $( '#value4' ).text(1050);
+	}
+	
+	
+	function numberfall5(){
+		// Schnelles hinunterzählen
+	    $( '#value5' ).numberFall({
+	        minus:      1000
+        	, speed:    'fast' // Alternativ: 5
+	    });
+	}
+	
+	function numberfallreset5(){
+	    $( '#value5' ).text(88356);
+	}
+	</script>
+  </body>
+</html>
