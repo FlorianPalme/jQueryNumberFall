@@ -4,7 +4,7 @@ Erstelle einfache Zahlen-Wasserfälle um zum Beispiel eine Kontobewegung zu visua
 
 ## Beispiele
 
-= Link folgt =
+[Demo](http://bit.ly/1eBNkrs)
 
 ## Beispiel-Nutzung
 
